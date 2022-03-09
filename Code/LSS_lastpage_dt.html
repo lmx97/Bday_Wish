@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0129)file:///D:/Programming/LSS_test-20210310T132431Z-001%20(2)/LSS_test-20210310T132431Z-001/LSS_test/LSS_Final/LSS_lastpage(dt).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Happy Birthday🎂</title>
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        -webkit-box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(245, 159, 47);
+    }
+
+    .div_video {
+        position: fixed;
+        left: 520px;
+        right: 0px; 
+        top: 15px;
+        bottom: 310px; 
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+
+    #myVideo {
+        width: 30%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .div_audio {
+        position: fixed;
+        left: 950px;
+        right: 0;  
+        top: 0;
+        background-color: transparent;
+    }
+
+    .image-wrapperr.div_pure_words { 
+        position: fixed;
+        left: 0px;
+        right: 0px;  
+        top: 750px;
+        bottom: 0px;  
+    }
+    .div_bg {
+        position: fixed;
+        left: 550px;
+        right: 0; 
+        top: 400px;
+        bottom: 21px;  
+        background-color:rgba(255,255,255,0.3); 
+        text-align: justify;  
+        background-repeat: no-repeat;
+        width: 40%;
+    }
+
+    .slide-left{
+        position: absolute;
+        left: 0;
+        right: 0;  
+        top: 45px;
+        bottom: 0;  
+        padding: 30px;
+        text-align: center;     
+        background-size: 100%;
+        color: rgb(142, 9, 238);
+        font-size: 40px;
+    }
+    img {
+        position: fixed;
+        top: 400px;
+        left: 550px;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+    }
+    #btn {
+        position: fixed;
+        top: 10px;
+        width: 2%;
+    }
+</style>
+</head>
+    <body>
+    <img src="https://cdn2.vectorstock.com/i/1000x1000/12/81/music-icon-note-vector-20661281.jpg" width="30px" id="btn">
+    <audio src="../x/music.mp3" id="myaudio" controls="controls" loop="false" hidden="true">
+    </audio>
+
+    <script type="text/javascript">
+        var btn=document.getElementById('btn');
+        var audio=document.getElementById('myaudio');
+        var tag = true;
+        btn.onclick = function(){
+            if(tag){
+                audio.play();
+                tag = false;
+            }else{
+                audio.pause();
+                tag = true;
+            }
+        }
+    </script>
+
+      <div class="image-wrapper div_pure_words" style="background-image">
+    	<img src="https://wallpaperaccess.com/full/4580569.png" alt="image">
+    <div class="div_bg">
+        <div class="slide-left">
+            <p>愿你开心，平安，健康<br>好事都奔向你</p>
+            <div class="slide-right">
+                <p>坏事都远离你！<br>还有就是今后少干些奇怪的事🤣</p>
+                <div class="slide-up">
+                    <p>也要记得多点休息😘<br>一定要一直好好的❤</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <style style="text/css">
+            div.slide-left{
+                width:100%;
+                overflow:hidden;
+            }
+            div.slide-left p{
+                animation: slide-left 7s;
+            }
+            @keyframes slide-left{
+                from{
+                    margin-left: 100%;
+                    width:300%;
+                }
+                to{
+                    margin-left:0%;
+                    width:100%;
+                }
+            }
+            div.slide-right{
+                width:100%;
+                overflow:hidden;
+            }
+            div.slide-right p{
+                animation:7s slide-right;
+            }
+            @keyframes slide-right{
+                from{
+                    margin-left:-200%;
+                    width:300%;
+                }
+                to{
+                    margin-left:0%;
+                    width:100%;
+                }
+            }
+            div.slide-up{
+                height:200px;
+                overflow:hidden;
+            }
+            div.slide-up p{
+                animation: 5s slide-up;
+                margin-top:0%;
+            }
+            @keyframes slide-up{
+                from{
+                    margin-top:100%;
+                    height:300%;
+                }
+                to{
+                    margin-top:0%;
+                    height:100%;
+                }
+            }
+        </style>
+
+        <div class="div_video">
+    <video autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+        <source src="https://www.youtube.com/watch?v=8jeV2sBHQfg" type="video/MP4">
+    </video>
+</div>
+    
+
+
+</body></html>
