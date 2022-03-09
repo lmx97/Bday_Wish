@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0126)file:///D:/Programming/LSS_test-20210310T132431Z-001%20(2)/LSS_test-20210310T132431Z-001/LSS_test/LSS_Final/LSS_page2(6s).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Happy Birthday</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: violet;
+        }
+
+        img {
+            position: fixed;
+            left: 680px;
+            right: 0;
+            top: 50px;
+            width: 500px;
+        }
+        .div_words {
+            position: fixed;
+            left: 680px;
+            right: 667px;
+            top: 600px;
+            bottom: 100px;
+            background-color: rgba(21, 129, 172, 0.2);
+            border-radius: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: rgb(238, 200, 130);
+            font-style: italic;
+        }
+        .div_left_btn {
+            position: fixed;
+            left: 830px;
+            top: 750px;
+        }
+        .div_right_btn {
+            position: fixed;
+            left: 970px;
+            top: 750px;
+        }
+
+        .button {
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 8px 10px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            color: indigo;
+        }
+
+    </style>
+    <style>
+        .flip {
+            font-size: 16px;
+            padding: 8px 10px;
+            text-align: center;
+            background-color: rgba(255,255,255,0.3);
+            color: indigo;
+            margin: 4px 2px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        #panel {
+            display: none;
+            padding: 15px 32px;
+            font-size: 16px;
+            background-color: rgb(24, 255, 159);
+            color: blueviolet;
+            margin: 4px 2px;
+            border-radius: 15px;
+            text-align: right;
+        }
+        p {
+            font-style: italic;
+            text-align: center;
+
+    </style>
+
+</head>
+<body>
+    <!--
+    <div class="div_pg2_bg" style="background-image: url(../birthday_gif.gif);">
+    </div>
+    -->
+    <div class="image-wrapper div_pg2_bg">
+    	<img src="https://m.media-amazon.com/images/I/71yiSqaShqL._SL1400_.jpg" alt="image">
+    </div>
+    <div class="div_pg2_words">
+        <div class="div_words">
+            <h1> 仙女，生日快乐呀 !</h1><br>
+            <p> 又长大一岁啦，祝你开心快乐每一天，<br>运气爆表，活出自己想要的样子</p>
+        </div>
+        <div class="div_left_btn">
+            <a href="LSS_lastpage_dt.html" class="button"> 好的 </a>
+        </div>
+    </div>
+    <div class="div_right_btn">
+        <div class="flip" onclick="myFunction()">不好</div>
+        <div id="panel" style="display: none;">
+    <span onclick="this.parentElement.style.display=&#39;none&#39;">❌</span>
+            <p>😅<br>不能不好，啊哈哈哈</p>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("panel").style.display = "block";
+            }
+        </script>
+</div>
+</body></html>
